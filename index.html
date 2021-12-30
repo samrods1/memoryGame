@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="./CSS/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+
+
+    <style>
+       body {
+
+        display: flex;
+        align-items: center;
+        font-family: 'Righteous', sans-serif;
+        height: 100vh;
+        background: linear-gradient(-75deg, #0000005d 50%, rgba(0, 0, 0, 0) 30%), url(./images/bg.jpg);
+        background-size:cover;
+        overflow: hidden;
+       }
+
+       .landingPg{
+
+           width: 50%;
+           height: 100vh;
+       }
+
+       h1{
+
+        font-size: 120px;
+        background: -webkit-linear-gradient(#eee, rgb(104, 243, 134));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+       
+         }
+
+       #start{
+           
+            font-family: 'Righteous', sans-serif;
+            font-size: 30px;
+            width: 200px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);            cursor: pointer;
+            background: linear-gradient(to left, rgb(236, 243, 238) 50%, #005c54 50%) right;
+            background-size: 200%;
+            transition: .5s ease-out;
+        }
+
+        #start:hover{ 
+            
+            background-position: left;
+            color: white;
+        }
+
+       a{
+           font-size: 10px;
+           display: flex;
+           margin-top: 100px;
+           color: darkolivegreen;
+           
+       }
+
+       .socialMediaBox{
+           width: 50%;
+           height: 100vh;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+
+       
+
+       .socialMedia a{
+            font-family: 'Righteous', sans-serif;
+            font-size: 20px;
+            width: 200px;
+            padding: 20px;
+            margin: 50px;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px rgba(12, 12, 12, 0.685);
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background: linear-gradient(to left, rgb(236, 243, 238) 50%, #005c54 50%) right;
+            background-size: 200%;
+            transition: .5s ease-out;
+       }
+
+       .socialMedia a:hover{
+        background-position: left;
+        color: white;
+    }
+
+    .socialMedia2{
+        display: none;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="socialMediaBox">
+        <div class="socialMedia">
+            <a href="https://www.linkedin.com/in/samuel-rods/" target="_blank"> LinkedIn </a>
+            <a href="https://github.com/samrods1" target="_blank"> GitHub </a>
+        </div>
+    </div>
+
+    <div id="gameStart" class="landingPg">
+        <div>
+           <h1>Guess the Tech!</h1>
+        </div>
+        <button id="start" onclick="start()">Play Now</button>
+
+        <div class="socialMedia2">
+                <a href="https://www.linkedin.com/in/samuel-rods/" target="_blank"> LinkedIn </a>
+                <a href="https://github.com/samrods1" target="_blank"> GitHub </a>
+        </div>
+        
+
+        <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+    </div>
+    </div>
+
+    <script src="./scripts/button.js"></script>
+
+</body>
+</html>

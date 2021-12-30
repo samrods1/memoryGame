@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(25deg, #001a25 25%, #01393b 50%, #94A187 30%);
+    margin-top:10px ;
+    overflow: hidden;
+    
+}
+
+
+.card {
+
+    width: 100px;
+    height: 100px;
+    position:relative;
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;    
+}
+
+.card_back, .card_front{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.card_front{
+    transform: rotateY(180deg);
+    background-color:#101c2c;
+}
+
+.card_back{
+
+    color: #101c2c;
+    background-color: #02af67;
+    font-size: 30px;
+}
+
+#gameOver{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#restart{
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#gameBoard{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.goBackButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.goBackButtons a, button{
+    margin: 15px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.9);
+}
+
+
+#newGame{
+    
+    font-family: 'Righteous', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 20px;
+    background: linear-gradient(to left, rgb(236, 243, 238) 50%, #005c54 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#mainMenu{
+    font-family: 'Righteous', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 20px;
+    background: linear-gradient(to left, rgb(236, 243, 238) 50%, #005c54 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newGame:hover{
+    background-position: left;
+    color: white;
+}
+
+#mainMenu:hover{
+    background-position: left;
+    color: white;
+}
